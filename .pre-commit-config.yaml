@@ -1,0 +1,51 @@
+repos:
+    -   repo: https://github.com/pre-commit/pre-commit-hooks
+        rev: v2.3.0
+        hooks:
+        -   id: check-yaml
+        -   id: end-of-file-fixer
+        -   id: trailing-whitespace
+    -   repo: https://github.com/asottile/pyupgrade
+        rev: v2.7.2
+        hooks:
+          - id: pyupgrade
+    -   repo: https://github.com/asottile/reorder_python_imports
+        rev: v3.9.0
+        hooks:
+          - id: reorder-python-imports
+    -   repo: https://github.com/psf/black
+        rev: 22.6.0
+        hooks:
+        -   id: black
+            language_version: python3.10
+            args:
+                - -tpy310
+                - --line-length=125
+                - --exclude="""\.git |
+                  \.__pycache__|
+                  \.hg|
+                  \.mypy_cache|
+                  \.tox|
+                  \.venv|
+                  _build|
+                  buck-out|
+                  build|
+                  dist"""
+    -   repo: https://github.com/asottile/dead
+        rev: v1.5.0
+        hooks:
+        -   id: dead
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v2.3.0
+      hooks:
+        - id: flake8
+          args: # arguments to configure flake8
+            - "--max-line-length=125"
+            - "--max-complexity=21"
+            - "--select=B,C,E,F,W,T4,B9"
+            # https://flake8.pycqa.org/en/latest/user/error-codes.html
+            - "--ignore=E203,E266,E501,W503,F403,F401,E402"
+    -   repo: https://github.com/h0ppr/mr_freeze
+        # rev: v0.1.0
+        hooks:
+          - id: mr_freeze

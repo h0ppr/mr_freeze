@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mr-freeze"
+version = "0.1.0"
+description = ""
+authors = ["Alex <alexandersimcock@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mr_freeze"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
