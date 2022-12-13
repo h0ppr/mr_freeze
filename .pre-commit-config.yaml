@@ -46,6 +46,6 @@ repos:
             # https://flake8.pycqa.org/en/latest/user/error-codes.html
             - "--ignore=E203,E266,E501,W503,F403,F401,E402"
     -   repo: https://github.com/h0ppr/mr_freeze
-        # rev: v0.1.0
+        rev: v0.1.1-alpha
         hooks:
           - id: mr_freeze
