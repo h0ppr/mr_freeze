@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import os
-from typing import Sequence
+from typing import Optional
+
+# from typing import Sequence
 
 
 def saver(**kwargs) -> None:
@@ -14,7 +16,7 @@ def saver(**kwargs) -> None:
     return None
 
 
-def virtual_env_detector_naive() -> str:
+def virtual_env_detector_naive() -> Optional[str]:
     files = [file.name for file in os.scandir()]
     if "Pipfile" in files:
         return "pipenv"
