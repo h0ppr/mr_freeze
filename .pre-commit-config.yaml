@@ -35,6 +35,7 @@ repos:
         rev: v1.5.0
         hooks:
         -   id: dead
+            language_version: python3.10
     - repo: https://github.com/pre-commit/pre-commit-hooks
       rev: v2.3.0
       hooks:
@@ -45,7 +46,7 @@ repos:
             - "--select=B,C,E,F,W,T4,B9"
             # https://flake8.pycqa.org/en/latest/user/error-codes.html
             - "--ignore=E203,E266,E501,W503,F403,F401,E402"
-    -   repo: https://github.com/h0ppr/mr_freeze
-        rev: v0.1.1-alpha
-        hooks:
-          - id: mr_freeze
+    # -   repo: https://github.com/h0ppr/mr_freeze
+    #     rev: v0.1.1-alpha
+    #     hooks:
+    #       - id: mr_freeze
