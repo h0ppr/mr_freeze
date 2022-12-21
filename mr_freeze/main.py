@@ -7,11 +7,11 @@ from typing import Optional
 
 
 def saver(**kwargs) -> None:
-    match kwargs["method"]:
-        case "pipenv":
-            os.system("pipenv lock -r > requirements.txt")
-        case "poetry":
-            os.system("poetry export -f requirements.txt --output requirements.txt")
+    method = kwargs["method"]
+    if method == "pipenv":
+        os.system("pipenv lock -r > requirements.txt")
+    elif method == "poetry":
+        os.system("poetry export -f requirements.txt --output requirements.txt")
 
     return None
 
