@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: mr-freeze
-Version: 0.1.0
+Version: 0.1.2
 Summary: freeze environment requirements to requirements.txt for dockerfile
 Author: Alex Simcock
 Author-email: alexandersimcock@gmail.com

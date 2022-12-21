@@ -1,6 +1,8 @@
+README.md
 setup.cfg
 setup.py
 mr_freeze/__init__.py
+mr_freeze/__main__.py
 mr_freeze/main.py
 mr_freeze.egg-info/PKG-INFO
 mr_freeze.egg-info/SOURCES.txt

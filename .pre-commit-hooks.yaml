@@ -1,7 +1,7 @@
 - id: mr_freeze
   name: mr_freeze
   description: Freezes environment variables to requirements.txt for dockerization.
-  entry: freezer
+  entry: mr-freeze
   language: python
   pass_filenames: false
   always_run: true
