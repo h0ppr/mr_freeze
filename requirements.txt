@@ -1,0 +1,21 @@
+-i https://pypi.org/simple
+.
+attrs==22.2.0; python_version >= '3.6'
+cfgv==3.3.1
+colorama==0.4.6; sys_platform == 'win32'
+dead==1.5.0
+distlib==0.3.6
+exceptiongroup==1.0.4; python_version < '3.11'
+filelock==3.8.2
+identify==2.5.9
+iniconfig==1.1.1
+nodeenv==1.7.0
+packaging==22.0; python_version >= '3.7'
+platformdirs==2.6.0
+pluggy==1.0.0; python_version >= '3.6'
+pre-commit==2.20.0
+pytest==7.2.0
+pyyaml==6.0
+toml==0.10.2
+tomli==2.0.1; python_version < '3.11'
+virtualenv==20.17.1
