@@ -1,14 +1,14 @@
 repos:
+    # -   repo: https://github.com/h0ppr/mr_freeze
+    #     rev: v0.1.6.2-alpha
+    #     hooks:
+    #       - id: mr_freeze
     -   repo: https://github.com/pre-commit/pre-commit-hooks
         rev: v2.3.0
         hooks:
         -   id: check-yaml
         -   id: end-of-file-fixer
         -   id: trailing-whitespace
-    # -   repo: https://github.com/h0ppr/mr_freeze
-    #     rev: v0.1.6.2-alpha
-    #     hooks:
-    #       - id: mr_freeze
     -   repo: https://github.com/asottile/pyupgrade
         rev: v2.7.2
         hooks:
