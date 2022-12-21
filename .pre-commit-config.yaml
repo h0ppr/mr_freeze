@@ -44,8 +44,14 @@ repos:
             - "--max-line-length=125"
             - "--max-complexity=21"
             - "--select=B,C,E,F,W,T4,B9"
-            # https://flake8.pycqa.org/en/latest/user/error-codes.html
             - "--ignore=E203,E266,E501,W503,F403,E402"
+    - repo: https://github.com/pycqa/pylint
+      rev: v2.15.9
+      hooks:
+        - id: pylint
+          args:
+            - "--disable=C0114,R1710,E0402,F0010"
+            - "--ignore-paths=./build"
     # -   repo: https://github.com/h0ppr/mr_freeze
     #     rev: v0.1.2-alpha
     #     hooks:

@@ -7,5 +7,5 @@ except (ImportError, ModuleNotFoundError):
 
 
 def test_env_detector_naive() -> None:
+    """Asserts that output is relevant to the venv"""
     assert virtual_env_detector_naive() == "pipenv"
-    assert virtual_env_detector_naive
