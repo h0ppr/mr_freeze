@@ -1,0 +1,2 @@
+[console_scripts]
+mr-freeze = mr_freeze.main:main
