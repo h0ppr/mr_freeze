@@ -18,6 +18,8 @@ pyyaml = "==6.0"
 toml = "==0.10.2"
 virtualenv = "==20.17.1"
 pytest = "*"
+setuptools = "*"
+mr-freeze = {path = "."}
 
 [requires]
 python_version = "3.1"

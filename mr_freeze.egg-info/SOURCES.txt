@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+mr_freeze/__init__.py
+mr_freeze/main.py
+mr_freeze.egg-info/PKG-INFO
+mr_freeze.egg-info/SOURCES.txt
+mr_freeze.egg-info/dependency_links.txt
+mr_freeze.egg-info/entry_points.txt
+mr_freeze.egg-info/top_level.txt
