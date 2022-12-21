@@ -20,6 +20,7 @@ virtualenv = "==20.17.1"
 pytest = "*"
 setuptools = "*"
 mr-freeze = {path = "."}
+flake8 = "*"
 
 [requires]
 python_version = "3.1"
