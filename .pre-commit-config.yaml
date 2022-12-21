@@ -5,6 +5,10 @@ repos:
         -   id: check-yaml
         -   id: end-of-file-fixer
         -   id: trailing-whitespace
+    # -   repo: https://github.com/h0ppr/mr_freeze
+    #     rev: v0.1.6.2-alpha
+    #     hooks:
+    #       - id: mr_freeze
     -   repo: https://github.com/asottile/pyupgrade
         rev: v2.7.2
         hooks:
@@ -50,9 +54,5 @@ repos:
       hooks:
         - id: pylint
           args:
-            - "--disable=C0114,R1710,E0402,F0010"
+            - "--disable=C0114,R1710,E0402,F0010,W0511"
             - "--ignore-paths=./build"
-    # -   repo: https://github.com/h0ppr/mr_freeze
-    #     rev: v0.1.2-alpha
-    #     hooks:
-    #       - id: mr_freeze
