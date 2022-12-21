@@ -30,7 +30,7 @@ jobs:
         black . --check
     - name: Lint with pylint
       run: |
-        pylint . --disable=C0114,R1710,E0402,F0010
+        pylint . --ignore-paths=./build --disable=C0114,R1710,E0402,F0010
     - name: Test with pytest
       run: |
         pytest
