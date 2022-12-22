@@ -23,10 +23,17 @@ def virtual_env_detector_naive() -> Optional[str]:
         return "poetry"
 
 
+def line_checker(line:str) -> bool:
+    if line in ("\n", ".\n"):
+        return False
+    return True
+
+
 def requirements_linter() -> None:
     """Lints the requirements.txt file so pre-commit passes"""
-    print("running linter")
-    os.system("pre-commit run --file=requirements.txt")
+    with open("requirements.txt", 'r') as file:
+        data = [line.strip("\n") for line in file if line_checker(line)]
+        breakpoint()
 
 
 def main() -> None:
