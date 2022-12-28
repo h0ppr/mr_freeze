@@ -54,5 +54,5 @@ repos:
       hooks:
         - id: pylint
           args:
-            - "--disable=C0114,R1710,E0402,F0010,W0511"
+            - "--disable=C0114,R1710,E0401,E0402,F0010,W0511"
             - "--ignore-paths=./build"

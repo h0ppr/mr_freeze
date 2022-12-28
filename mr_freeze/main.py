@@ -23,7 +23,8 @@ def virtual_env_detector_naive() -> Optional[str]:
         return "poetry"
 
 
-def line_checker(line:str) -> bool:
+def line_checker(line: str) -> bool:
+    """Removes whitespace lines"""
     if line in ("\n", ".\n"):
         return False
     return True
@@ -31,9 +32,14 @@ def line_checker(line:str) -> bool:
 
 def requirements_linter() -> None:
     """Lints the requirements.txt file so pre-commit passes"""
-    with open("requirements.txt", 'r') as file:
+    with open("requirements.txt", "r", encoding="utf-8") as file:
         data = [line.strip("\n") for line in file if line_checker(line)]
-        breakpoint()
+
+    os.remove("requirements.txt")
+
+    with open("requirements.txt", "w", encoding="utf-8") as file:
+        file.write("\n".join(data))
+        file.write("\n")
 
 
 def main() -> None:

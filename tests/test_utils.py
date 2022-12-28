@@ -16,11 +16,14 @@ def test_env_detector_naive() -> None:
 
 
 @pytest.mark.parametrize(
-    "input, output",
+    "test_input, output",
     [
-        (".\n", False), ("\n", False),
-        ("test\n", True), ("double_test_\n", True),
+        (".\n", False),
+        ("\n", False),
+        ("test\n", True),
+        ("double_test_\n", True),
     ],
 )
-def test_line_checker(input: str, output: str):
-    assert line_checker(input) == output
+def test_line_checker(test_input: str, output: str):
+    """tests line checker -> *sigh* pylint..."""
+    assert line_checker(test_input) == output
