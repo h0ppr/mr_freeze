@@ -12,9 +12,9 @@ toml = "==0.10.2"
 virtualenv = "==20.17.1"
 pytest = "*"
 setuptools = "*"
-mr-freeze = {path = "."}
 flake8 = "*"
 black = "*"
 pylint = "*"
+mr-freeze = {path = "."}
 
 [dev-packages]
